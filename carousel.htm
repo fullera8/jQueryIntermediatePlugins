@@ -4,15 +4,16 @@
     <title>Carousel Plugin</title>
     
     <style type="text/css">
-        #btnPrev {position:absolute; left:5px; top:50px;}
-        #btnNext {position:absolute; left:662px; top:50px;}
-        .carouselImages {margin-left:45px;}
+        #btnPrev {position:absolute; left:5px; top:50px;} /*Previous button*/
+        #btnNext {position:absolute; left:662px; top:50px;}/*Next button*/
+        .carouselImages {margin-left:45px;} /*image size*/
     </style>
 
     <script src="/js/jquery-1.10.2.min.js"></script>
     <script src="/js/jcarousellite_1.0.1.min.js"></script>
     
     <script >
+        //programatic initialization and control
         $(function () {
             $(".carouselImages").jCarouselLite({
                 btnNext: "#btnNext",
