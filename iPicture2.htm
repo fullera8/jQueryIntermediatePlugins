@@ -6,12 +6,13 @@
     <link rel="stylesheet" type="text/css" media="screen" href="/css/iPicture.css"/>
 
     <script src="/js/jquery-2.0.2.min.js"></script>
-    <script src="/js/jQuery.iPicture.js"></script>
+    <script src="/js/jQuery.iPicture.js"></script> <!--Tooltip plugin-->
 </head>
 <body>
     <div id="iPicture" data-interaction="hover">
         <div class="ip_slide">
-            <img class="ip_tooltipImg" src="/images/FlagBridge.JPG">
+            <img class="ip_tooltipImg" src="/images/FlagBridge.JPG"> <!--Class for the tooltip-->
+            <!--This is prebuilt by the plugin and allows for a quick build via intellisense-->
             <div class="ip_tooltip ip_img32" style="top: 197px; left: 353px;" data-button="moreblack" data-tooltipbg="bgblack" data-round="roundBgW" data-animationtype="ltr-slide">
                 <p>This is the bridge you can <a href="http://bridgeclimb.com/">climb</a>.</p>
             </div>
@@ -21,7 +22,7 @@
         </div>
     </div>
     <script>
-        $("#iPicture").iPicture();
+        $("#iPicture").iPicture(); //initialization
     </script>
 </body>
 </html>
