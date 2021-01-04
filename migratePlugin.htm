@@ -5,7 +5,7 @@
 
     <script src="/js/jquery-2.0.2.min.js"></script>
     <script src="/js/jquery-migrate-1.2.1.js"></script>
-    <!--<script src="/js/jquery-migrate-1.2.1.min.js"></script>-->
+    <script src="/js/jquery-migrate-1.2.1.min.js"></script> <!--You will need this migrate plugin to use older methods-->
     <script src="/js/jquery.cycle2.min.js"></script>
     
     <style type="text/css"> 
@@ -17,7 +17,7 @@
         $(function() {
             $('.slideshow').cycle({ fx: 'fade' });
 
-            alert(jQuery.migrateWarnings);
+            alert(jQuery.migrateWarnings); /*This tells us what needs an update*/
         });
     </script>
 </head>
