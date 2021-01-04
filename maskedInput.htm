@@ -4,12 +4,13 @@
     <title>Masked Edit</title>
 
     <script src="/js/jquery-2.0.2.min.js"></script>
-    <script src="/js/jquery.maskedinput.min.js"></script>
+    <script src="/js/jquery.maskedinput.min.js"></script> <!--mask input control-->
     
     <script type="text/javascript">
+        //This prevents incorrect character types
         $(function () {
-            $("#TextBoxDate").mask("99/99/9999");
-            $("#TextBoxPhone").mask("(999) 999-9999");
+            $("#TextBoxDate").mask("99/99/9999"); /*9 represents a numeric input, a is a letter a-z, * is wildcard*/
+            $("#TextBoxPhone").mask("(999) 999-9999"); /*Notice these fields will also pre-populate format*/
         });
     </script>   
 </head>
