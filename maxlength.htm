@@ -4,18 +4,18 @@
     <title>Max Length Plugin</title>
         
     <script src='/js/jquery-1.10.2.min.js'></script>
-    <script src="/js/jquery.maxlength.js"></script>
+    <script src="/js/jquery.maxlength.js"></script> <!--Controls the max length of a field and displays metadata on the page-->
 
     <script type="text/javascript">
         $(function () {
-            $("#Comments").maxlength({ 'feedback': '#numCharactersLeft' });
+            $("#Comments").maxlength({ 'feedback': '#numCharactersLeft' }); //programatic initialization
         });
     </script>
 </head>
 <body>
     <form>
         Characters Left: <span id="numCharactersLeft">20</span><p />
-        <textarea id="Comments" maxlength="20" style="width:200px;"></textarea>
+        <textarea id="Comments" maxlength="20" style="width:200px;"></textarea> <!--declarative control-->
     </form>
 </body>
 </html>
