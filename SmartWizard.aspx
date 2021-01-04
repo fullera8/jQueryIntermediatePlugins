@@ -12,20 +12,20 @@
     </style>
 
     <script src="/js/jquery-1.10.2.min.js"></script>
-    <script src="/js/jquery.smartWizard-2.0.min.js"></script> 
+    <script src="/js/jquery.smartWizard-2.0.min.js"></script> <%--Controls what the user sees for form completion so they do not feel overwhelmed--%>
     
     <script type="text/javascript">
         $(function () {
-            $('#wizard').smartWizard();
+            $('#wizard').smartWizard(); //programatic intialization
         });
     </script>   
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server"> <%--declarative control--%>
         <asp:PlaceHolder ID="PlaceHolderRegisterWizard" runat="server">
         <div id="wizard" class="swMain">
             <ul>
-                <li><a href="#step-1">
+                <li><a href="#step-1"> <%--notice the steps control--%>
                     <label class="stepNumber">1</label>
                     <span class="stepDesc">Userid<br />
                         <small>Userid and password</small>
