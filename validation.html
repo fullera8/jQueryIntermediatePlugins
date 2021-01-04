@@ -18,10 +18,12 @@
     </style>
 
     <script src="/js/jquery-1.10.2.min.js"></script>
-    <script src="/js/parsley.js"></script>
+    <script src="/js/parsley.js"></script> <!--form validation plugin-->
 </head>
 <body>
-     <form method="post" data-parsley-validate data-parsley-namespace="data-parsley-" >
+    <!--declarative initialization and control, note this can be done programatically.--> 
+    <!--The declarative format also allows for regex-->
+    <form method="post" data-parsley-validate data-parsley-namespace="data-parsley-" >
         <label for="TextZip">Zip*:</label>
         <input id="TextZip" name="TextZip" type="text" data-parsley-regexp="^\d{5}$" data-parsley-required="true" data-parsley-error-message="Invalid must be 5 digits" /> 
         
