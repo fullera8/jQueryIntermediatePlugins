@@ -7,11 +7,11 @@
     <link href="/css/bootstrap.icons.css" rel="stylesheet" />
 
     <script src="/js/jquery-2.0.2.min.js"></script>
-    <script src="/js/jquery.toolbar.min.js"></script>
+    <script src="/js/jquery.toolbar.min.js"></script> <!--Dropdown toolbar bound to an element.-->
 
     <script type="text/javascript">
         $(function () {
-            $('#myToolbar').toolbar({
+            $('#myToolbar').toolbar({ //programatically initialized and controled. Elements initialized declarativly.
                 content: '#user-toolbar-options', position: 'bottom', hideOnClick: true
             });
         });
