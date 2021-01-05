@@ -6,12 +6,13 @@
     <link rel="stylesheet" href="/css/jquery.qtip.min.css" type="text/css" />
 
     <script src="/js/jquery-2.0.2.min.js"></script>
-    <script src="/js/jquery.qtip.min.js"></script>
+    <script src="/js/jquery.qtip.min.js"></script> <!--Tooltips that appear over any web element. Allows for tool tips with any web element imbedded-->
 
      <script type="text/javascript">
+         //Uses programatic intialization but elements for the tooltip need to be initialized declarativly. Uses programatic control 
          $(function () {
              $("#titleTooltip").qtip();
-             $("#dataTipToolip").qtip({
+             $("#dataTipToolip").qtip({ //Uses JSON style controls
                  content: {
                      attr: 'data-tip' 
                  }
