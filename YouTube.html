@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="/css/ytv.css" type="text/css" media="screen" />
 
     <script src="/js/jquery-1.10.2.min.js"></script>
-    <script src="/js/ytv.js"></script> 
+    <script src="/js/ytv.js"></script> <!--Imbeds a YouTube Channel player on the page, note this will only work with a remote server-->
     
     <script type="text/javascript">
         $(function () {
-            $('#frame').ytv({
-                user: 'pluralsight',
+            $('#frame').ytv({ //programatic initialization and control
+                user: 'Coffeezilla', //visit github for a full list of controls, generally CSS style control with keys being the element to load
                 browsePlaylists: true,
                 controls: true,
                 autoplay: false,
