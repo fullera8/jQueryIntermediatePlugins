@@ -6,13 +6,15 @@
     <link rel="stylesheet" href="/css/jquery.listnav-2.1.css" type="text/css" media="screen" />
 
     <script src="/js/jquery-2.0.2.min.js"></script>
+    <!--List navigation, detects the list of elements and gives characters to filter by.
+    If the Character in the list is clicked, the list will filter down to the elements of that list whose first character is that selection.-->
     <script src="/js/jquery.listnav-2.1.js"></script>
 
-     <script type="text/javascript">
-         $(function () {
-             $('#usStates').listnav();
-         });
-     </script>
+    <script type="text/javascript">
+        $(function () { //programatic initialization and control. Elements must be initialized declarativly.
+            $('#usStates').listnav();
+        });
+    </script>
 
 </head>
 <body>
