@@ -6,13 +6,14 @@
     <link rel="stylesheet" href="/css/arthref.css" type="text/css" media="screen" />
 
     <script src="/js/jquery-1.10.2.min.js"></script>
-    <script src="/js/socialProfiles.js"></script> 
+    <script src="/js/socialProfiles.js"></script> <!--Displays links to your social sights-->
 
     <script type="text/javascript">
+        //programatic initialization and control, CSS style control that is a simple key value pair with key being the site
         $(function () {
-            $('.showSocial').socialProfiles({
+            $('.showSocial').socialProfiles({ //note this is a hyperlink style
             email: 'boedie@outlook.com',
-            facebook: 'pluralsight',
+            facebook: 'pluralsight',//Notice the key contains the generic site info, this is just the account name
             twitter: 'boedie',
             }); 
         });
