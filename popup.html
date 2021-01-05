@@ -6,13 +6,15 @@
     <link rel="stylesheet" type="text/css" href="/css/colorbox.css" />
 
     <script src="/js/jquery-2.0.2.min.js"></script>
-    <script src="/js/jquery.colorbox-min.js"></script>
+    <script src="/js/jquery.colorbox-min.js"></script> <!--Pop-up with modal or non-modal options-->
 
     <script>
          $(function () { 
+            //Programatic initialization and control
             $("#inlineFlag").colorbox({ inline: true, width: "745px", height: "590px", overlayClose: false });
             $("#iframePluralsight").colorbox({ iframe: true, width: "90%", height: "90%", closeButton: false });
 
+             //Loaded hooks that allow for specialized control after specific load events happen
             $("#events").colorbox({
                 onOpen: function () { alert("Colorbox onOpen"); },
                 onLoad: function () { alert("Colorbox onLoad"); },
