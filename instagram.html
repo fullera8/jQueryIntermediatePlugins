@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="/css/jqinstagram.css" type="text/css" media="screen" />
 
     <script src="/js/jquery-1.10.2.min.js"></script>
-    <script src="/js/jqinstapics.js"></script> 
+    <script src="/js/jqinstapics.js"></script> <!--Imbeds photos on the page from an instagram account-->
     
     <script type="text/javascript">
         $(function () {
-            $("#instagram").jqinstapics({
-                "user_id": "--",
+            $("#instagram").jqinstapics({ //Programatic initialization and control
+                "user_id": "--", //This requires the user ID and access token
                 "access_token": "--",
                 "count": 5
             });
