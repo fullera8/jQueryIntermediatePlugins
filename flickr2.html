@@ -6,15 +6,15 @@
     <link rel="stylesheet" href="/css/jquery.zflickrfeed.css" type="text/css" media="screen" />
 
     <script src="/js/jquery-1.10.2.min.js"></script>
-    <script src="/js/jquery.zflickrfeed.js"></script>
+    <script src="/js/jquery.zflickrfeed.js"></script><!--Allows images from a flickr account to be imbedded from a user account on the page-->
 
     <script type="text/javascript">
         $(function () {
             //Tags - 'ocean,mountain'
             //User - 110988023@N02
-            $('div').flickrfeed('', 'ocean,mountain', {
-                limit: 10,
-                imagesize: 'small'
+            $('div').flickrfeed('', 'ocean,mountain', { //programatic initialization and control
+                limit: 10, //images with captions and links imbedded directly on the page
+                imagesize: 'small' 
             });
         });
     </script>
