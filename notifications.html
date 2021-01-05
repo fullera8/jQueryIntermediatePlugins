@@ -9,10 +9,11 @@
     <script src="/js/noty/jquery.noty.js"></script>
     <script src="/js/noty/layouts/top.js"></script>
     <script src="/js/noty/layouts/bottom.js"></script>
-    <script src="/js/noty/themes/default.js"></script>
+    <script src="/js/noty/themes/default.js"></script> <!--Allows for stylized notifications with more complex controls-->
 
     <script>
        $(function () {
+           //programatic initialization and control. CSS control style
            var n = noty({ text: 'This may be headed in a bad direction', type: 'warning', timeout: 1500 });
            setTimeout(function () {
                n = noty({ text: 'Something went horribly wrong!', type: 'error', layout: 'bottom' });
