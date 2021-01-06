@@ -5,11 +5,16 @@
 
     <!--<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script> -->
     <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
-    <script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.10.2.min.js"></script>
+    
+    <!--By adjusting the source, you can put the libraries on a CDN that will host servers globally and better distribute the content.
+    Meaning if everyone can get the library from closer servers and distributed servers for faster downloads.-->
+    <script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.10.2.min.js"></script> 
 
     <!-- Fallback to use a local copy if the CDN does not load properly -->
     <script>
-        !window.jQuery && document.write('<script src="/js/jquery-1.10.2.min.js"><\/script>');
+        //If there is an issue with the CDN, you can use a conditional script to fallback to the local server that may be slower
+        //but will better ensure the service does not go down.
+        !window.jQuery && document.write('<script src="/js/jquery-1.10.2.min.js"><\/script>'); 
     </script>
 
     <script type="text/javascript">
