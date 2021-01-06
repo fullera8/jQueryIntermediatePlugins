@@ -11,7 +11,10 @@
         <script src="/js/jquery.ipicture.js"></script>
     <% #else %>
 <%--        <script src="/myBundledScripts"></script>--%>
-    <script src="<%= Microsoft.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/myBundledScripts") %>"></script>
+
+   <%-- This allows you to bundle your scripts together and predetermine the order of the load at runtime. This will put the plugins in 
+    a single request for faster browser performance--%>
+    <script src="<%= Microsoft.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/myBundledScripts") %>"></script> 
     <% #endif %>    
 </head>
 <body>
