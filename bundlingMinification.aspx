@@ -13,7 +13,8 @@
 <%--        <script src="/myBundledScripts"></script>--%>
 
    <%-- This allows you to bundle your scripts together and predetermine the order of the load at runtime. This will put the plugins in 
-    a single request for faster browser performance--%>
+    a single request for faster browser performance. This will also give you control of how long to store these in client cache or quickly 
+    know when to re-pull the cache based on a hash check.--%>
     <script src="<%= Microsoft.Web.Optimization.BundleTable.Bundles.ResolveBundleUrl("~/myBundledScripts") %>"></script> 
     <% #endif %>    
 </head>
